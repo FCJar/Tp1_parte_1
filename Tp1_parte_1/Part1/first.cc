@@ -65,7 +65,7 @@ main (int argc, char *argv[])
 
 
   Ipv4AddressHelper address;
-  std::vector(Ipv4InterfaceContainer) interCliente;
+  std::vector<Ipv4InterfaceContainer> interCliente;
   for(uint32_t i = 0; i < clientes; ++i)
   {
    NodeContainer pair(nodeServer.Get(0), nodeClient.Get(i));
@@ -94,3 +94,4 @@ main (int argc, char *argv[])
   Simulator::Destroy ();
   return 0;
 }
+
